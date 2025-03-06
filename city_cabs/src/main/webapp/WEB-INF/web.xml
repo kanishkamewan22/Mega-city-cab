@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>mine</display-name>
+
+    <!-- Define your servlets here -->
+
+    <servlet>
+        <servlet-name>mewan</servlet-name>
+        <servlet-class>servlet.mewan</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mewan</servlet-name>
+        <url-pattern>/thula</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VehicleServlet</servlet-name>
+        <servlet-class>servlet.VehicleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>VehicleServlet</servlet-name>
+        <url-pattern>/VehicleService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>admin</servlet-name>
+        <servlet-class>servlet.admin</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>submitBooking</servlet-name>
+        <servlet-class>servlet.submitBooking</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>submitBooking</servlet-name>
+        <url-pattern>/VehicleBookingService</url-pattern>
+    </servlet-mapping>
+    
+  
+    
+
+</web-app>
